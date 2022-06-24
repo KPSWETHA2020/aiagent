@@ -31,6 +31,7 @@ The agent should detect the location and suck if the location it is dirty,else i
 The performance is measured with the number of movements and the cleaning action of the agent.
 
 ## PROGRAM
+```
 import random
 
 class Thing:
@@ -100,6 +101,7 @@ def TableDrivenVacuumAgent():
 
 
 class Environment:
+
     """Abstract class representing an Environment. 'Real' Environment classes
     inherit from this. Your Environment will typically need to implement:
         percept:           Define the percept that an agent sees.
@@ -181,6 +183,7 @@ class Environment:
 
 
 class TrivialVacuumEnvironment(Environment):
+
     """This environment has two locations, A and B. Each can be Dirty
     or Clean. The agent perceives its location and the location's
     status. This serves as an example of how to implement a simple
@@ -228,7 +231,7 @@ if __name__ == "__main__":
     print('\033[1m' + 'After Execution\n' + '\033[0m',environment.status)
     print('\033[1m' + 'Agent Location\n' + '\033[0m',agent.location)
     print('\033[1m' + 'Agent Performance After Execution\n' + '\033[0m',agent.performance)
-
+```
 ## OUTPUT
 ![image](https://user-images.githubusercontent.com/75235209/162242799-6af7c0aa-e2c1-4d80-a7e1-8aacf6ada591.png)
 
